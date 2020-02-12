@@ -4,7 +4,7 @@ trigger:
 pool:
   vmImage: 'ubuntu-16.04'
 
-container: homeassistant/home-assistant
+container: homeassistant/home-assistant:latest
 
 steps:
 - script: |
