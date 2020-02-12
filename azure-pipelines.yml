@@ -1,0 +1,20 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-16.04'
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.7'
+    addToPath: true
+    architecture: 'x64'
+
+- script: pip install homeassistant
+  displayName: 'Install homeassistant'
+
+- script: |    
+    mv travis_secrets.yaml secrets.yaml
+    hass -c . --script check_config
+  displayName: 'Validate Configuration' 
