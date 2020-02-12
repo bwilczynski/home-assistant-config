@@ -11,8 +11,8 @@ pool:
 
 steps:
 - script: |
-    pip install --upgrade pip
-    pip install homeassistant
+    python -m pip install --upgrade pip setuptools wheel --user
+    pip3 install homeassistant
   displayName: 'Install pip and latest home assistant'
 
 - script: |
