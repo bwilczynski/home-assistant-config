@@ -1,20 +1,12 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
 - master
 
 pool:
-  vmImage: 'Ubuntu-latest'
+  vmImage: 'ubuntu-16.04'
+
+container: homeassistant/home-assistant
 
 steps:
-- script: |
-    sudo apt update && sudo apt install python3-pip
-    pip3 install homeassistant
-  displayName: 'Install pip and latest home assistant'
-
 - script: |
     mv travis_secrets.yaml secrets.yaml
     hass -c . --script check_config
