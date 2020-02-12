@@ -7,12 +7,12 @@ trigger:
 - master
 
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: 'Ubuntu-latest'
 
 steps:
 - script: |
-    pip3 install --upgrade pip3
-    pip3 install homeassistant
+    pip install --upgrade pip
+    pip install homeassistant
   displayName: 'Install pip and latest home assistant'
 
 - script: |
