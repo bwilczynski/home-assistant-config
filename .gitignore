@@ -1,0 +1,17 @@
+# Ignore all files by default
+*
+
+# Allow files
+!*.yaml
+!.gitignore
+!*.md
+
+# Allow travis configuration
+!.travis
+!.travis/travis.*
+!.travis.yml
+
+# Should not be leaked
+ip_bans.yaml
+secrets.yaml
+known_devices.yaml

@@ -1,0 +1,21 @@
+- platform: flux
+  lights:
+    - light.kuchnia_spot_1
+    - light.kuchnia_spot_2
+    - light.kuchnia_spot_3
+    - light.kuchnia_spot_4
+    - light.salon_stol
+  disable_brightness_adjust: True
+  mode: mired
+  name: Kitchen Fluxer
+
+- platform: flux
+  lights:
+    - light.biuro_plafon_1
+    - light.biuro_plafon_2
+    - light.salon_plafon_1
+    - light.salon_plafon_2
+    - light.salon_kinkiet
+  disable_brightness_adjust: True
+  mode: mired
+  name: Living Room Fluxer

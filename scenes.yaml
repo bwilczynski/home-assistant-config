@@ -1,0 +1,29 @@
+- name: Living Room normal
+  entities:
+    group.kitchen_lights:
+      state: on
+      transition: 2
+      brightness: 192
+    group.living_room_ceiling_lights:
+      state: on
+      transition: 2
+      brightness: 192
+
+- name: Living Room dim
+  entities:
+    group.kitchen_lights:
+      state: on
+      transition: 2
+      brightness: 8
+    group.living_room_lights:
+      state: off
+      transition: 2
+    light.salon_stol:
+      state: off
+      transition: 2
+
+- name: All lights off
+  entities:
+    group.all_lights:
+      state: off
+      transition: 2

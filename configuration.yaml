@@ -1,0 +1,39 @@
+default_config:
+
+homeassistant:
+  auth_providers:
+    - type: homeassistant
+    - type: trusted_networks
+      trusted_networks:
+        - 192.168.10.0/24
+  customize: !include customize.yaml
+
+tts:
+  - platform: google_translate
+
+speedtestdotnet:
+  scan_interval:
+    minutes: 30
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+
+sonos:
+  media_player:
+    hosts:
+      - 192.168.10.20
+      - 192.168.10.21
+      - 192.168.10.22
+      - 192.168.10.23
+
+media_player:
+  - platform: braviatv
+    host: 192.168.10.18
+
+group: !include groups.yaml
+switch: !include switches.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+# sensor: !include sensors.yaml

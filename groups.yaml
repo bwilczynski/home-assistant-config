@@ -1,0 +1,29 @@
+kitchen_lights:
+  name: Kitchen Lights
+  entities:
+    - light.kuchnia
+
+living_room_office_ceiling_lights:
+  name: Office Celing Lights
+  entities:
+    - light.biuro_plafon
+
+living_room_ceiling_lights:
+  name: Living Room Ceiling Lights
+  entities:
+    - light.salon_plafon
+
+living_room_lights:
+  name: Living Room Lights
+  entities:
+    - group.living_room_office_ceiling_lights
+    - group.living_room_ceiling_lights
+    - light.salon_kinkiet
+
+all_lights:
+  name: All Lights
+  entities:
+    - group.living_room_lights
+    - group.kitchen_lights
+    - light.salon_stol
+    - light.monitor_lightstrip

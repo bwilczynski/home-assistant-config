@@ -1,0 +1,34 @@
+media_player.glowna_sypialnia:
+  icon: mdi:speaker
+  friendly_name: Bedroom Sonos
+
+media_player.pokoj_dominiki:
+  icon: mdi:speaker
+  friendly_name: Dominika's Room Sonos
+
+media_player.salon:
+  icon: mdi:speaker
+  friendly_name: Living Room Sonos
+
+media_player.lazienka:
+  icon: mdi:speaker
+  friendly_name: Bathroom Sonos
+
+media_player.sony_bravia_tv:
+  icon: mdi:television
+  friendly_name: Sony Bravia TV
+
+scene.living_room_normal:
+  icon: mdi:brightness-5
+
+scene.living_room_dim:
+  icon: mdi:brightness-4
+
+scene.all_lights_off:
+  icon: mdi:brightness-2
+
+automation.tv_is_on:
+  friendly_name: Dim lights when TV is on
+
+automation.tv_is_off:
+  friendly_name: Turn lights on when TV is off
