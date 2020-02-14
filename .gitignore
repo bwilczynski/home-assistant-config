@@ -3,13 +3,9 @@
 
 # Allow files
 !*.yaml
+!*.yml
 !.gitignore
 !*.md
-
-# Allow travis configuration
-!.travis
-!.travis/travis.*
-!.travis.yml
 
 # Should not be leaked
 ip_bans.yaml
