@@ -51,7 +51,7 @@
     - service: media_player.volume_set
       entity_id: media_player.salon
       data:
-        volume_level: 0.1
+        volume_level: 0.14
 
 - alias: "Turn off night sound before the evening"
   trigger:
