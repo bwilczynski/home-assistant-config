@@ -12,8 +12,7 @@ tts:
   - platform: google_translate
 
 speedtestdotnet:
-  scan_interval:
-    minutes: 30
+  manual: true
   monitored_conditions:
     - ping
     - download
@@ -36,4 +35,4 @@ switch: !include switches.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
-# sensor: !include sensors.yaml
+sensor: !include sensors.yaml
