@@ -1,5 +1,10 @@
 default_config:
 
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 10.233.64.0/18
+
 homeassistant:
   auth_providers:
     - type: homeassistant
